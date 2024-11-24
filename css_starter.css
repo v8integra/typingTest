@@ -1,0 +1,47 @@
+/* CSS reset */
+* {
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+/* Main styles */
+body {
+  background-color: rgb(167, 230, 109);
+}
+
+@media screen and (max-width: 1400px) {
+body {
+  background-color: rgb(238, 138, 134);
+}
+}
+
+@media screen and (max-width: 1200px) {
+body {
+  background-color: rgb(230, 124, 230);
+}
+}
+
+@media screen and (max-width: 992px) {
+body {
+  background-color: rgb(129, 68, 153);
+}
+}
+
+@media screen and (max-width: 768px) {
+body {
+  background-color: rgb(55, 44, 116);
+}
+}
+
+@media screen and (max-width: 575px) {
+body {
+  background-color: aqua;
+}
+}
+
+@media print {
+
+}
