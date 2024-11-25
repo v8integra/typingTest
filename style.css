@@ -1,48 +1,66 @@
 /* CSS reset */
-* {
-  border: 0;
+html {
   box-sizing: border-box;
-  font-size: 100%;
-  margin: 0;
-  padding: 0;
-  vertical-align: baseline;
 }
 /* Main styles */
 body {
-  background-color: rgb(167, 230, 109);
-  min-height: 100vh;
+  background: rgb(171, 187, 214);
+  font-family: monospace; 
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
 }
 
-@media screen and (max-width: 1400px) {
-body {
-  background-color: rgb(238, 138, 134);
-}
-}
-
-@media screen and (max-width: 1200px) {
-body {
-  background-color: rgb(230, 124, 230);
-}
-}
-
-@media screen and (max-width: 992px) {
-body {
-  background-color: rgb(129, 68, 153);
-}
+#text-container {
+  width: 800px;
+  height: auto;
+  margin: 20px auto;
+  line-height: 2rem;
+  white-space: nowrap;
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: none;
 }
 
-@media screen and (max-width: 768px) {
-body {
-  background-color: rgb(55, 44, 116);
-}
-}
-
-@media screen and (max-width: 575px) {
-body {
-  background-color: aqua;
-}
+#timer {
+  margin: 10px;
+  font-size: 1.2rem;
 }
 
-@media print {
+button {
+  padding: 10px;
+  width: 150px;
+  background: rgb(37, 158, 37);
+  color: white;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  display: none;
+}
 
+button:hover {
+  filter: brightness(1.2);
+}
+
+span {
+  min-width: 14px;
+}
+
+.correct {
+  color: green;
+}
+
+.error {
+  color: red;
 }
